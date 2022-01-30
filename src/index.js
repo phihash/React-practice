@@ -1,17 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReacrtDOM from "react-dom";
+import {App} from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+ReacrtDOM.render(<App />, document.getElementById("root"));
+/*第一引数にrender対象,第二引数にrender箇所 */
+/*第一引数が<App />となっているが、Reactでは関数名をHTMLのようにタグで囲むことによってコンポーネントとして扱える*/
